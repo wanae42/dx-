@@ -1,11 +1,5 @@
 import openai
-from dotenv import load_dotenv
-load_dotenv()
-
-import os
 import streamlit as st
-
-openai_api_key = os.getenv("OPENAI_API_KEY")
 
 def response(user_input_message, state_message_history):
     state_message_history.append({'role' : 'user',
